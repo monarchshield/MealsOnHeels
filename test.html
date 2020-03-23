@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>pagePiling.js plugin - Looping</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="javascript/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		var deleteLog = false;
+
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3','page4','page5'],
+			    sectionsColor: ['#FF6666', '#2ebe21', '#2C3E50', '#51bec4',"#FF99FF"],
+				 navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['WELCOME', 'ABOUT', 'ORDER', 'THANKS', 'SIGNUP!']
+			   	},
+			    loopTop: true,
+			    loopBottom: true
+			});
+	    });
+    </script>
+</head>
+<body>
+
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+			<h1>Welcome</h1>
+			<p>Place holder content for now : todo place a logo image and some footer text here to see how it works</p>
+	    </div>
+	    <div class="section" id="section2">
+	    	<div class="intro">
+	    		<h1>ABOUT</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua.
+					At risus viverra adipiscing at in. 
+				</p>
+	    	</div>
+	    </div>
+	    <div class="section" id="section4">
+	    	<div class="intro">
+	    		<h1>Order Form</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+					do eiusmod tempor incididunt ut labore 
+					et dolore magna aliqua. At risus viverra adipiscing at in.
+				</p>
+	    	</div>
+	    </div>
+		 <div class="section" id="section5">
+	    	<div class="intro">
+	    		<h1>SPECIAL THANKS</h1>
+				<p>Choose how this is worded its fine</p>
+	    	</div>
+	    </div>
+		 <div class="section" id="section6">
+	    	<div class="intro">
+	    		<h1>Get Involved!</h1>
+				<p>And it will loop to the first section</p>
+	    	</div>
+	    </div>
+		
+	</div>
+
+</body>
+</html>
