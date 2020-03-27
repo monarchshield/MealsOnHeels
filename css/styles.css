@@ -1,0 +1,44 @@
+
+@font-face{
+  font-family: 'Helvetica';
+  src: url('fonts/Helvetica 400.ttf');
+  
+}
+
+@font-face{
+  font-family: 'Coves';
+  src: url('fonts/Coves Light.otf');
+}
+
+
+@font-face{
+  font-family: 'Kayak';
+  src: url('fonts/Kayak Sans Regular.otf');
+}
+
+@font-face{
+  font-family: 'Moon';
+  src: url('fonts/Moon2.0-Regular.otf');
+}
+
+@font-face{
+  font-family: 'Simplifica';
+  src: url('fonts/SIMPLIFICA Typeface.ttf');
+}
+
+
+.HelveticaText {
+	font-family: 'Helvetica';
+}
+
+.CovesText {
+	font-family: 'Coves';
+}
+
+.MoonText {
+	font-family: 'Moon';
+}
+
+.SimplificaText {
+	font-family: 'Simplifica';
+}
